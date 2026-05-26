@@ -1,12 +1,178 @@
-# React + Vite
+# 🚀 Crowd Funding Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+The frontend is built using **React + Vite** and provides the user interface for the crowdfunding platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
 
-## Expanding the ESLint configuration
+- User Authentication
+- Campaign Creation
+- Donation System
+- Dashboard Management
+- Analytics
+- Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| React | Frontend Library |
+| Vite | Build Tool |
+| Tailwind CSS | Styling |
+| Axios | API Requests |
+| Zustand | State Management |
+| React Router DOM | Routing |
+| Chart.js | Analytics |
+
+---
+
+# 📂 Folder Structure
+
+```bash
+client/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── routes/
+│   ├── services/
+│   ├── store/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── vite.config.js
+```
+
+---
+
+# ⚡ Important Files
+
+## main.jsx
+
+Entry point of the React application.
+
+### Responsibilities
+
+- Renders React app
+- Loads global styles
+- Connects App component to DOM
+
+---
+
+## App.jsx
+
+Main application component.
+
+### Responsibilities
+
+- Defines routes
+- Handles navigation
+- Loads layouts and pages
+
+---
+
+# 🔐 Authentication Flow
+
+```text
+User Login
+    ↓
+Frontend Validation
+    ↓
+API Request
+    ↓
+Backend Verification
+    ↓
+JWT Token Generated
+    ↓
+Access Granted
+```
+
+---
+
+# 🎯 Campaign Flow
+
+```text
+Create Campaign
+      ↓
+Upload Image
+      ↓
+Store Campaign
+      ↓
+Display Publicly
+```
+
+---
+
+# 💳 Donation Flow
+
+```text
+User Donates
+      ↓
+Razorpay Order Created
+      ↓
+Payment Gateway Opens
+      ↓
+Payment Success
+      ↓
+Donation Stored
+```
+
+---
+
+# 🌐 API Communication
+
+Axios is used for backend communication.
+
+```js
+axios.post("/api/auth/login", data)
+```
+
+---
+
+# ⚙️ Environment Variables
+
+Create `.env` inside client folder:
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+---
+
+# ▶️ Running Frontend
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+# ✨ Frontend Features
+
+## 👤 User Features
+
+- Register/Login
+- Create Campaign
+- Donate
+- Manage Dashboard
+
+## 🛡️ Admin Features
+
+- Manage Users
+- Campaign Moderation
+- Analytics Dashboard
